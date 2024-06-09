@@ -43,4 +43,4 @@ jobs:
       - name: Publish to npm with canary tag
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm publish --tag canary --no-git-checks
+        run: pnpm changeset publish --tag canary --no-git-checks
