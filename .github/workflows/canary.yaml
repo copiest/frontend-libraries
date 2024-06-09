@@ -22,8 +22,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Generate date-based pre-release tag
-        id: get-now
-        run: echo "TAG_NAME=canary-$(date +'%Y%m%d')" >> $GITHUB_ENV  
+        run: echo "TAG_NAME=$(git rev-parse --short HEAD)-$(date +'%Y%m%d')" >> $GITHUB_ENV  
 
       - name: setup pnpm and install dependencies
         uses: pnpm/action-setup@v3
