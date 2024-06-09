@@ -1,0 +1,18 @@
+{
+  "name": "@copiest/frontend-libraries",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/copiest/frontend-libraries.git"
+  },
+  "scripts": {
+    "build": "turbo run build"
+  },
+  "keywords": [],
+  "author": "@copiest",
+  "packageManager": "pnpm@9.1.4",
+  "devDependencies": {
+    "turbo": "^1.13.3"
+  }
+}
