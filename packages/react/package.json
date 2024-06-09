@@ -1,7 +1,7 @@
 {
   "name": "@copiest/react",
   "version": "0.0.0",
-  "description": "",
+  "description": "copiest 공통 react",
   "main": "./src/index.ts",
   "exports": {
     ".": {
@@ -26,5 +26,8 @@
   },
   "peerDependencies": {
     "react": ">=17.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
