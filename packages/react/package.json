@@ -1,6 +1,6 @@
 {
   "name": "@copiest/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "copiest 공통 react",
   "main": "./src/index.ts",
   "exports": {
