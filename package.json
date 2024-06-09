@@ -7,7 +7,8 @@
     "url": "https://github.com/copiest/frontend-libraries.git"
   },
   "scripts": {
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "release:canary": "pnpm build && changeset version --snapshot && pnpm publish --tag canary --no-git-checks"
   },
   "keywords": [],
   "author": "@copiest",
