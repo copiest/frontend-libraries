@@ -27,5 +27,13 @@ jobs:
             version: 9.1.4
             run_install: true
 
+      - name: Enter pre-release mode for changesets
+        run: pnpm changeset pre enter canary
+
+      - name: Create a changeset version
+        run: pnpm changeset version --snapshot
+
       - name: Publish to npm with canary tag
-        run: pnpm run release:canary
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --tag canary --no-git-checks
