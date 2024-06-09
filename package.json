@@ -1,14 +1,12 @@
 {
-  "name": "@copiest/frontend-libraries",
-  "version": "0.0.0",
-  "description": "",
+  "name": "copiest-frontend-libraries",
+  "description": "copiest 공통 라이브러리",
   "repository": {
     "type": "git",
     "url": "https://github.com/copiest/frontend-libraries.git"
   },
   "scripts": {
-    "build": "turbo run build",
-    "release:canary": "pnpm build && changeset version --snapshot && pnpm publish --tag canary --no-git-checks"
+    "build": "turbo run build"
   },
   "keywords": [],
   "author": "@copiest",
