@@ -28,4 +28,4 @@ jobs:
             run_install: true
 
       - name: setup pnpm and install dependencies
-      - run: pnpm run release:canary
+        run: pnpm run release:canary
