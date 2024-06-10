@@ -9,3 +9,5 @@ export function useToggle(defaultValue = false): readonly [boolean, () => void] 
 
   return [state, toggle] as const;
 }
+
+export const FOO = 'FOO'
