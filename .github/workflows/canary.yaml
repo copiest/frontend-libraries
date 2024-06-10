@@ -40,13 +40,13 @@ jobs:
         run: pnpm changeset pre exit
 
       - name: Publish to npm with canary tag
-            id: changesets
-            uses: changesets/action@v1
-            with:
-                title: '🚀 canary publish'
-                commit: '📦 bump changed packages version'
-                publish: pnpm release:canary
-            env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        id: changesets
+        uses: changesets/action@v1
+        with:
+            title: '🚀 canary publish'
+            commit: '📦 bump changed packages version'
+            publish: pnpm release:canary
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
